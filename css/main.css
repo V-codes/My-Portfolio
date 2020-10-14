@@ -131,6 +131,7 @@ h4{}
   align-items: center;
   flex-flow: column wrap;
   margin: 20px;
+
  }
 
   header .logo a{
@@ -142,12 +143,13 @@ h4{}
     color: #DC3964;
     text-align: center;
     margin-left: 20px;
+    text-transform: lowercase;
 }
 
 .header-divider {
 
   height: 1px;
-  width: 100%;
+  width: 90%;
   margin: 10px 0 10px 0;
   border-top: 2px solid #335C67;
 }
@@ -164,7 +166,7 @@ h4{}
   color: #335C67;
   line-height: 30px;
   margin-right: 40px;
-
+  text-transform: lowercase;
 
   }
 
@@ -179,7 +181,7 @@ h4{}
   background-color: #EFC7BD;
   width: 100%;
  }
- 
+
 footer .content-wrapper{
   display: flex;
   justify-content: center;
@@ -310,15 +312,18 @@ h1{
   margin: 40px 40px 40px 40px;
 
 }
-.about .image{
-
-  border: 1px solid #b7b7b7;
+.about figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 30px 20px 10px;
   width: 100%;
   max-width: 400px;
-  height: auto;
+  max-height: 500px;
 }
-
+.about .image{
+  border: 1px solid #black;
+}
 
 
  /* ==========================================================================
@@ -431,9 +436,349 @@ h1{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+     /*Tablet styles here*/
+
+ /*General styles*/
+     .content-wrapper {
+       width: 100%;
+
+     }
+
+     h1{
+       font-size: 3em;
+       margin: 0;
+       padding: 10px 0;
+       width: 100%;
+     }
+
+     h2 {
+       font-size: 2.7em;
+       line-height: 1.333;
+     }
+
+     h3 {
+         font-size: 2em;
+         line-height: 1.25;
+     }
+     h4{
+       font-size: 2em;
+       line-height: 1.25em;
+
+     }
+
+     /*Header styles*/
+
+     header {
+
+     }
+
+     header .content-wrapper {
+       width: 100%;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+     }
+
+     header .logo a {
+       display: flex;
+       justify-content: flex-start;
+
+       margin: 0px 0 20px 0;
+       padding: 0px;
+       font-size: 1em;
+       width: 75%;
+     }
+
+     header nav {
+       display: flex;
+       justify-content: flex-end;
+       margin: 0px 0 20px 0;
+       padding: 0px;
+       width: 20%;
+     }
+
+     header nav ul {
+       display: flex;
+       justify-content: space-between;
+       font-size: 1em;
+      line-height: 2em;
+
+     }
+
+     header .header-divider {
+       display: none;
+       width: 5%;
+     }
+
+/*Work section*/
+
+    .work .image{
+
+       max-width: 600px;
+     }
+     .work h4{
+       font-size: 1.2em;
+     }
+     .work-item{
+       margin: 0;
+       padding: 0;
+       line-height: normal;
+     }
+
+     .work .descriptions{
+       margin: 0;
+       padding: 0;
+       line-height: normal;
+     }
+
+
+/*About section*/
+
+    .about h4{
+      font-size: 1.7em;
+    }
+    .about p{
+      text-align: center;
+      font-size: 1.3em;
+      line-height: 1.1em;
+      width: 70%;
+      margin: 30px 0 30px 120px;
+    }
+
+    .about .content-wrapper{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 0px;
+    }
+
+    .about-content{
+      width: 70%;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0px 10px 0px 0px;
+      margin: 20px 30px 20px 10px;
+    }
+    .about h4{
+      margin-left: 30px;
+      padding-left: 30px;
+      text-align: center;
+    }
+
+    .about figure{
+      display: flex;
+      align-items: center;
+      width: 40%;
+      flex-basis: 40%;
+    }
+
+    .about .image{
+      margin: 0px 20px 20px 0px;
+    }
+
+
+/*footer*/
+
+  footer h3{
+    font-size: 1.5em;
+  }
+  footer p{
+    font-size: .8em;
+  }
+
+  footer .content-wrapper{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    width: 100%;
+
+  }
+
+
+
+  .contact, .social, .meet{
+    display: flex;
+    justify-content:space-between;
+    flex-flow: column;
+
+
+
+
 }
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+/*General styles */
+
+header {
+
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  min-height: 750px;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+header .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3em;
+ line-height: 2em;
+  width: 30%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.header-divider {
+  display: none;
+}
+
+  .logo {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 2em;
+  margin: 0px 0px 50px 0px;
+  padding: 0px;
+
+}
+
+
+
+
+h1{
+  font-size: 3.5em;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.9em;
+  line-height: 1.333;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.25;
+}
+h4{
+  font-size: 2em;
+  line-height: 1.25em;
+
+}
+
+p{
+  font-size: 2em;
+}
+
+  .hero-area{
+    background: none;
+  }
+
+/*Work section*/
+.work{
+
+}
+.work-item{
+  width: 100%;
+  flex-flow: column;
+}
+.work figure{
+  justify-content: flex-start;
+
+  width: 40%;
+}
+
+.work .description{
+  justify-content: flex-end;
+  width: 40%;
+}
+
+
+/*About section*/
+
+  .about .content-wrapper{
+
+    margin-bottom: 50px;
+
+
+}
+
+  .about-content{
+    width: 50%;
+    align-items: center;
+    margin-left: 70px;
+  }
+
+  .about figure{
+    display: flex;
+    justify-content: center;
+    margin: 50px 250px;
+    width: 50%;
+    flex-basis: 25%;
+    max-height: 400px;
+  }
+
+  .about h2{
+    width: 100%;
+  }
+
+
+  footer .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    max-height: 400px;
+
+  }
+
+  .contact, .social, .meet{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+    width: 20%;
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
