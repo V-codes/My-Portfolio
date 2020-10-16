@@ -111,7 +111,7 @@ h3{
   font-size: 1.125em;
 }
 
-h4{}
+
 
 .content-wrapper{
   width: 90%;
@@ -130,24 +130,26 @@ h4{}
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  width: 100%;
+  margin: 20px;
+
  }
 
   header .logo a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: .9em;
     text-decoration: none;
     color: #DC3964;
     text-align: center;
-    margin: 10px 0 0 20px;
+    margin-left: 20px;
+    text-transform: lowercase;
 }
 
 .header-divider {
 
   height: 1px;
-  width: 100%;
+  width: 90%;
   margin: 10px 0 10px 0;
   border-top: 2px solid #335C67;
 }
@@ -164,7 +166,7 @@ h4{}
   color: #335C67;
   line-height: 30px;
   margin-right: 40px;
-
+  text-transform: lowercase;
 
   }
 
@@ -176,8 +178,9 @@ h4{}
 
 
  footer {
-   background-color: #EFC7BD;
-   width: 100%;
+  background-color: #EFC7BD;
+  width: 100%;
+  text-align: center;
  }
 
 footer .content-wrapper{
@@ -185,8 +188,13 @@ footer .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-left: 20px;
+  margin-left: 40px;
   line-height: 1.5em;
+}
+footer h2{
+  padding-top: 40px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 footer address a{
@@ -224,17 +232,12 @@ footer .social-icons p {
 
  /* Hero Area */
 
- .hero-area {
+ .hero-area{
  background-image: url("../img/hero.png");
  background-position: center;
  background-size: cover;
  min-height: 500px;
  width: 100%;
-
-}
-
-.content-wrapper header{
-  width: 100%;
 }
 
 h1{
@@ -242,9 +245,8 @@ h1{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
-  margin-left: 20px;
-  font-size: 2em;
+  width: 70%;
+  margin-left: 40px;
 }
 
  h1 span{
@@ -258,34 +260,34 @@ h1{
 /* Work  */
 
   .work .content-wrapper{
-    width: 90%;
+    width: 80%;
   }
 
 .work{
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   text-align: center;
   line-height: .8em;
-  margin-left: 20px;
+}
 
-}
-.work-items{
-  margin: 0;
-  line-height: 1em;
-}
 .work .image{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #b7b7b7;
   margin: 0px 40px 20px 0px;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
 }
 
 .work .description{
-margin-top: 50px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 20px 20px 0px 20px;
 }
 
 .work h4{
@@ -297,44 +299,38 @@ margin-top: 50px;
 /* About Me */
 
 .about{
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   text-align: center;
   background-image: url("../img/about-img.png");
-  background-position: left;
+  background-position: center;
   background-size: cover;
-  
+  background-repeat: no-repeat;
+  width: 100%;
 
-
-}
-
-.about h3{
-  margin-top: 20px;
 }
 
 .about p{
-  font-size: 1.2em;
-  line-height: 1em;
+  font-size: .8em;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  margin: 30px 30px 30px 30px;
+  margin: 40px 40px 40px 40px;
 
 }
-.about .image{
-
-  border: 1px solid #b7b7b7;
-  margin: 0 60px 20px 0px;
+.about figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 20px 10px;
   width: 100%;
   max-width: 400px;
-  height: auto;
+  max-height: 500px;
+}
+.about .image{
+  border: 1px solid black;
 }
 
-.about{
-  width: 100%;
-}
 
  /* ==========================================================================
     Work Page
@@ -446,9 +442,397 @@ margin-top: 50px;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+     /*Tablet styles here*/
+
+ /*General styles*/
+     .content-wrapper {
+       width: 100%;
+
+     }
+
+     h1{
+       font-size: 3em;
+       margin: 0;
+       line-height: 1em;
+       padding: 10px 0;
+       width: 90%;
+     }
+
+     h2 {
+       font-size: 2.9em;
+       line-height: 1.333;
+     }
+
+     h3 {
+         font-size: 2.1em;
+         line-height: 1.25;
+     }
+     h4{
+       font-size: 2em;
+       line-height: 1.25em;
+
+     }
+
+     /*Header styles*/
+
+     header {
+
+     }
+
+     header .content-wrapper {
+       width: 100%;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+     }
+
+     header .logo a {
+       display: flex;
+       justify-content: flex-start;
+
+       margin: 0px 0 20px 0;
+       padding: 0px;
+       font-size: 1em;
+       width: 100%;
+     }
+
+     header nav {
+       display: flex;
+       justify-content: flex-end;
+       margin: 0px 0 20px 0;
+       padding: 0px;
+       width: 20%;
+     }
+
+     header nav ul {
+       display: flex;
+       justify-content: space-between;
+       font-size: 1em;
+      line-height: 2em;
+
+     }
+
+     header .header-divider {
+       display: none;
+       width: 5%;
+     }
+
+/*Work section*/
+
+    .work .image{
+
+       max-width: 600px;
+     }
+
+
+     .work h3{
+       color: #335C67;
+     }
+     .work h4{
+       font-size: 1.2em;
+     }
+     .work-item{
+       margin: 0;
+       padding: 0;
+       line-height: normal;
+     }
+
+     .work .descriptions{
+       margin: 0;
+       padding: 0;
+       line-height: normal;
+     }
+
+
+/*About section*/
+
+    .about h4{
+      font-size: 1.7em;
+    }
+    .about p{
+      text-align: center;
+      font-size: 1.3em;
+      line-height: 1.1em;
+      width: 70%;
+      margin: 30px 0 30px 120px;
+    }
+
+    .about .content-wrapper{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      border: 8px dotted #DC3964;
+      width: 80%;
+      padding: 0px;
+
+
+    }
+
+    .about-content{
+      width: 80%;
+
+
+      padding-right: 20px;
+
+    }
+    .about h4{
+      margin-left: 90px;
+      padding-left: 30px;
+      text-align: center;
+    }
+
+    .about figure{
+      display: flex;
+      align-items: center;
+      width: 40%;
+      flex-basis: 40%;
+    }
+
+    .about .image{
+      margin: 0px 20px 20px 0px;
+    }
+    .about h5{
+      font-size: 1.2em;
+      margin-left: 90px;
+    }
+
+
+/*footer*/
+
+  footer .content-wrapper{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 90%;
+
+  }
+  footer h2{
+    margin-right: 50px;
+  }
+  footer h3{
+    font-size: 1.5em;
+  }
+  footer p{
+    font-size: .8em;
+  }
+
+
+
+  }
+
+
+
+  .contact, .social, .meet{
+    display: flex;
+    justify-content:space-between;
+    flex-flow: column;
+
+
+
+
 }
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+/*General styles */
+
+header {
+
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  min-height: 750px;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+header .content-wrapper {
+  width: 90%;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+  .header-divider {
+  display: none;
+  }
+
+  .logo {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 2em;
+  margin: 30px 0px 50px 30px;
+  padding: 0px;
+
+}
+
+
+
+
+h1{
+  font-size: 3.5em;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.9em;
+  line-height: 1.333;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.25;
+}
+h4{
+  font-size: 2em;
+  line-height: 1.25em;
+
+}
+
+p{
+  font-size: 2em;
+}
+
+  .hero-area{
+    background: none;
+  }
+
+/*Work section*/
+
+.work .content-wrapper{
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  margin-bottom: 30px;
+
+}
+.work h3{
+  color: #DC3964;
+}
+
+.work article{
+  display: flex;
+  flex-flow: row;
+  width: 95%;
+}
+
+.jubilee{
+  margin-right: 80px;
+
+}
+.jubilee .figure{
+  order: 1;
+  margin-right: 20px;
+}
+.jubilee .description{
+  order: 2;
+}
+
+.rogue, .recipe{
+  margin-left: 70px;
+
+}
+.recipe figure{
+  width: 50%;
+}
+.description{
+  margin: 40px;
+  align-items: center;
+}
+
+/*About section*/
+
+  .about .content-wrapper{
+    flex-flow: row;
+    margin-bottom: 70px;
+    border: 10px dotted #DC3964;
+    padding: 0px;
+    width: 70%;
+}
+
+  .about-content{
+    width: 70%;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .about figure{
+    display: flex;
+    justify-content: center;
+    margin: 50px 150px;
+    width: 50%;
+
+    max-height: 500px;
+  }
+
+  .about h2{
+    width: 100%;
+  }
+
+  .about h4{
+    margin-left: 100px;
+  }
+
+  h5{
+    font-size: 1.5em;
+    margin-left: 110px;
+  }
+
+/*Footer*/
+
+  footer .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .meet, .contact, .social{
+    width: 33%;
+  }
+
+  footer p{
+    font-size:1.5em;
+  }
+
+  footer{
+    max-height: 400px;
+  }
+}
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
