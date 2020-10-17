@@ -111,7 +111,7 @@ h3{
   font-size: 1.125em;
 }
 
-h4{}
+
 
 .content-wrapper{
   width: 90%;
@@ -180,6 +180,7 @@ h4{}
  footer {
   background-color: #EFC7BD;
   width: 100%;
+  text-align: center;
  }
 
 footer .content-wrapper{
@@ -189,6 +190,11 @@ footer .content-wrapper{
   flex-flow: column wrap;
   margin-left: 40px;
   line-height: 1.5em;
+}
+footer h2{
+  padding-top: 40px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 footer address a{
@@ -305,12 +311,20 @@ h1{
 
 }
 
+.about .content-wrapper{
+    border: 6px dotted #DC3964;
+    padding-top:20px;
+}
 .about p{
-  font-size: .8em;
+  font-size: 1em;
+  line-height: 1em;
   display: flex;
   justify-content: space-around;
   margin: 40px 40px 40px 40px;
 
+}
+.about h4, h5{
+  font-size: 1em;
 }
 .about figure{
   display: flex;
@@ -322,7 +336,7 @@ h1{
   max-height: 500px;
 }
 .about .image{
-  border: 1px solid #black;
+  border: 1px solid black;
 }
 
 
@@ -448,17 +462,18 @@ h1{
      h1{
        font-size: 3em;
        margin: 0;
+       line-height: 1em;
        padding: 10px 0;
-       width: 100%;
+       width: 90%;
      }
 
      h2 {
-       font-size: 2.7em;
+       font-size: 2.9em;
        line-height: 1.333;
      }
 
      h3 {
-         font-size: 2em;
+         font-size: 2.1em;
          line-height: 1.25;
      }
      h4{
@@ -517,6 +532,11 @@ h1{
 
        max-width: 600px;
      }
+
+
+     .work h3{
+       color: #335C67;
+     }
      .work h4{
        font-size: 1.2em;
      }
@@ -550,17 +570,20 @@ h1{
       display: flex;
       flex-flow: row;
       justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      margin-right: 40px;
+      border: 8px dotted #DC3964;
+      width: 80%;
+      padding: 0px;
+      margin-bottom: 40px;
+
+
     }
 
     .about-content{
-      width: 70%;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0px 10px 0px 0px;
-      margin: 20px 30px 20px 10px;
+      width: 80%;
+
+
+      padding-right: 20px;
+
     }
     .about h4{
       margin-left: 90px;
@@ -586,6 +609,16 @@ h1{
 
 /*footer*/
 
+  footer .content-wrapper{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 90%;
+
+  }
+  footer h2{
+    margin-right: 50px;
+  }
   footer h3{
     font-size: 1.5em;
   }
@@ -710,6 +743,9 @@ p{
   margin-bottom: 30px;
 
 }
+.work h3{
+  color: #DC3964;
+}
 
 .work article{
   display: flex;
@@ -738,9 +774,7 @@ p{
 }
 .description{
   margin: 40px;
-  display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 /*About section*/
@@ -783,17 +817,18 @@ p{
 
 /*Footer*/
 
-  footer .content-wrapper {
+  footer .content-wrapper{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: row;
   }
 
   .meet, .contact, .social{
-    width: 30%;
+    width: 33%;
   }
 
-
+  footer p{
+    font-size:1.2em;
+  }
 
 }
 
