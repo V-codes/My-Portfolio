@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 /* --------------------  General  Styles -------------------- */
 body{
-  font-family: 'Alegreya', serif;
+  font-family: 'railway', sans-serif;
   background-color: #ebe8e3;
   color: black;
   font-size: 1em;
@@ -98,17 +98,18 @@ h1{
   color: #DC3964;
   font-size: 1.5em;
   line-height: 40px;
-  font-family: 'red rose', cursive;
+  font-family: 'marck Script', cursive;
 }
 h2{
   font-size: 1.875em;
   color: #DC3964;
-  font-family: 'BioRhyme', serif;
+  font-family: 'julius sans one', sans-serif;
 
 }
 
 h3{
   font-size: 1.125em;
+  font-family: 'julius sans one', sans-serif;
 }
 
 
@@ -144,6 +145,7 @@ h3{
     text-align: center;
     margin-left: 20px;
     text-transform: lowercase;
+    font-family: 'julius sans one',sans-serif;
 }
 
 .header-divider {
@@ -174,13 +176,14 @@ h3{
  width: 100%;
  list-style-type: none;
  text-decoration: none;
+ font-family: 'julius sans one',sans-serif;
  }
 
 
  footer {
-  background-color: #EFC7BD;
-  width: 100%;
-  text-align: center;
+   background-color: #EFC7BD;
+   background-size: cover;
+   text-align: center;
  }
 
 footer .content-wrapper{
@@ -226,6 +229,7 @@ footer .social-icons p {
  footer .copyright {
    margin: 40px 0;
    text-align: center;
+   font-size: .5em;
  }
 
  /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -251,7 +255,7 @@ h1{
 
  h1 span{
    color: #DC3964;
-   font-family: 'BioRhyme', serif;
+   font-family: 'julius sans one',sans-serif;
    color: #335C67;
    font-size: 1.5em;
  }
@@ -292,6 +296,7 @@ h1{
 
 .work h4{
   font-size: .7em;
+  font-weight: 400;
   margin: 0 30px 0 30px;
 }
 
@@ -322,7 +327,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 30px 20px 10px;
+  margin: 0 30px 20px 0px;
   width: 100%;
   max-width: 400px;
   max-height: 500px;
@@ -330,7 +335,10 @@ h1{
 .about .image{
   border: 1px solid black;
 }
-
+.about .content-wrapper{
+  border: 6px dotted #DC3964;
+  width: 90%;
+}
 
  /* ==========================================================================
     Work Page
@@ -491,7 +499,7 @@ h1{
        display: flex;
        justify-content: flex-start;
 
-       margin: 0px 0 20px 0;
+       margin: 20px 0 20px 0;
        padding: 0px;
        font-size: 1em;
        width: 100%;
@@ -500,6 +508,7 @@ h1{
      header nav {
        display: flex;
        justify-content: flex-end;
+       align-items: flex-start;
        margin: 0px 0 20px 0;
        padding: 0px;
        width: 20%;
@@ -508,6 +517,7 @@ h1{
      header nav ul {
        display: flex;
        justify-content: space-between;
+
        font-size: 1em;
       line-height: 2em;
 
@@ -555,7 +565,7 @@ h1{
       font-size: 1.3em;
       line-height: 1.1em;
       width: 70%;
-      margin: 30px 0 30px 120px;
+
     }
 
     .about .content-wrapper{
@@ -571,14 +581,10 @@ h1{
 
     .about-content{
       width: 80%;
-
-
-      padding-right: 20px;
-
     }
+
     .about h4{
-      margin-left: 90px;
-      padding-left: 30px;
+
       text-align: center;
     }
 
@@ -589,12 +595,10 @@ h1{
       flex-basis: 40%;
     }
 
-    .about .image{
-      margin: 0px 20px 20px 0px;
-    }
+
     .about h5{
       font-size: 1.2em;
-      margin-left: 90px;
+
     }
 
 
@@ -617,18 +621,10 @@ h1{
     font-size: .8em;
   }
 
-
-
-  }
-
-
-
   .contact, .social, .meet{
     display: flex;
     justify-content:space-between;
     flex-flow: column;
-
-
 
 
 }
@@ -745,7 +741,7 @@ p{
 }
 
 .jubilee{
-  margin-right: 80px;
+  margin-right: 70px;
 
 }
 .jubilee .figure{
@@ -781,7 +777,7 @@ p{
   .about-content{
     width: 70%;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   .about figure{
@@ -797,20 +793,16 @@ p{
     width: 100%;
   }
 
-  .about h4{
-    margin-left: 100px;
-  }
-
   h5{
     font-size: 1.5em;
-    margin-left: 110px;
+
   }
 
 /*Footer*/
 
   footer .content-wrapper {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-between;
   }
 
@@ -823,8 +815,9 @@ p{
   }
 
   footer{
-    max-height: 400px;
+    min-height: 400px;
   }
+
 }
 
 
