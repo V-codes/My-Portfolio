@@ -266,7 +266,7 @@ h1{
 
 /* About Me */
 
-#about{
+.about{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -279,14 +279,14 @@ h1{
 
 }
 
-#about p{
+.about p{
   font-size: .8em;
   display: flex;
   justify-content: space-around;
   margin: 40px 40px 40px 40px;
 
 }
-#about figure{
+.about figure{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,10 +295,10 @@ h1{
   max-width: 400px;
   max-height: 500px;
 }
-#about .image{
+.about .image{
   border: 1px solid black;
 }
-#about .content-wrapper{
+.about .content-wrapper{
   border: 6px dotted #DC3964;
   width: 90%;
 }
@@ -485,7 +485,9 @@ h1{
 
      /*Header styles*/
 
+     header {
 
+     }
 
      header .content-wrapper {
        width: 100%;
@@ -530,10 +532,10 @@ h1{
 
 /*About section*/
 
-    #about h4{
+    .about h4{
       font-size: 1.7em;
     }
-    #about p{
+    .about p{
       text-align: center;
       font-size: 1.3em;
       line-height: 1.1em;
@@ -541,7 +543,7 @@ h1{
 
     }
 
-    #about .content-wrapper{
+    .about .content-wrapper{
       display: flex;
       flex-flow: row;
       justify-content: space-between;
@@ -552,16 +554,16 @@ h1{
 
     }
 
-    #about-content{
+    .about-content{
       width: 80%;
     }
 
-    #about h4{
+    .about h4{
 
       text-align: center;
     }
 
-    #about figure{
+    .about figure{
       display: flex;
       align-items: center;
       width: 40%;
@@ -569,7 +571,7 @@ h1{
     }
 
 
-    #about h5{
+    .about h5{
       font-size: 1.2em;
 
     }
@@ -660,6 +662,7 @@ header .content-wrapper {
   margin: 0px;
   padding: 0px;
 
+<<<<<<< HEAD
 }
 
 
@@ -727,7 +730,7 @@ p{
 
 /*About section*/
 
-  #about .content-wrapper{
+  .about .content-wrapper{
     display: flex;
     flex-flow: row;
     margin-bottom: 70px;
@@ -750,14 +753,14 @@ p{
   line-height: 5;
 }
 
-  #about figure{
+  .about figure{
     display: flex;
     justify-content: center;
     flex-basis: 50%;
     max-height: 500px;
   }
 
-  #about h2{
+  .about h2{
     width: 100%;
   }
 
@@ -838,6 +841,12 @@ figure {
   display: flex;
   flex-basis: 50%;
 }
+
+
+
+
+
+
 
 
 
