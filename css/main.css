@@ -750,7 +750,7 @@ p{
 .about-content p{
   width: 80%;
   margin-left: 70px;
-  line-height: 5;
+  line-height: 1.8;
 }
 
   .about figure{
@@ -796,15 +796,6 @@ p{
 /* ==========================================================================
   Work Page
 ========================================================================== */
-
-.work .content-wrapper{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 90%;
-
-
-
 }
 .work h3{
   color: #DC3964;
@@ -841,6 +832,15 @@ figure {
   display: flex;
   flex-basis: 50%;
 }
+
+
+
+
+
+
+
+
+
 
 
 
